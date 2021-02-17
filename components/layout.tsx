@@ -7,7 +7,13 @@ import Link from 'next/link'
 const name = 'Kapil'
 export const siteTitle = 'Learning NextJS'
 
-export default function Layout({ children, home }) {
+export default function Layout({ 
+  children, 
+  home 
+}: {
+  children: React.ReactNode
+  home?: Boolean
+}) {
   return (
     <div className={styles.container}>
       <Head>
